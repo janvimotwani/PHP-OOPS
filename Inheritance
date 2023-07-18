@@ -1,0 +1,14 @@
+class SportsCar extends Car {
+    public $topSpeed;
+
+    public function displaySpeed() {
+        echo "Top speed: " . $this->topSpeed . " mph";
+    }
+}
+
+$mySportsCar = new SportsCar();
+$mySportsCar->brand = "Ferrari";
+$mySportsCar->color = "Red";
+$mySportsCar->topSpeed = 200;
+$mySportsCar->startEngine(); 
+$mySportsCar->displaySpeed(); 
